@@ -46,7 +46,7 @@ echo "Bitte geben Sie ein Passwort für den Benutzer $username ein"
 echo "+++++++++++++++++++++++++++++++++++++++++++"
 passwd $username
 pacman -S sudo
-"%wheel ALL=(ALL:ALL) ALL" >> /etc/sudoers
+echo "%wheel ALL=(ALL:ALL) ALL" >> /etc/sudoers
 echo "++++++++++++++++++++++++++++++++++++++++++++++++        +++++++"
 echo "+++++++++++++++++++++++++++++++++++++++++++             +++++++"
 echo "+++++++++++++++++++++++++++++++++++++                   +++++++"
@@ -72,9 +72,9 @@ then
 fi
 echo "--------------------------------------------------------------------------"
 echo "almost there"
-echo "BITTE GEBEN SIE DIE FOLGENDE BEFEHLE IN DIE REINFOLGE EIN:"
-echo "1. exit           2. umount -a           3. reboot"
-echo "Oskar"
+printf "\e[1;32mBITTE GEBEN SIE DIE FOLGENDE BEFEHLE IN DIE REINFOLGE EIN:\e[0m"
+printf "\e[7;32m1. exit           2. umount -a           3. reboot\e[0m"
+printf "\e[7;31mOskar\e[0m"
 echo ":P"
 echo "--------------------------------------------------------------------------"
 
