@@ -40,7 +40,7 @@ systemctl enable cups
 echo "+++++++++++++++++++++++++++++++++++++++++++"
 echo "Hinzufügen eines neuen Benutzers mit dem Benutzernamen $username"
 echo "+++++++++++++++++++++++++++++++++++++++++++"
-useradd -mG wheel $username
+useradd -mG --badname wheel $username
 echo "+++++++++++++++++++++++++++++++++++++++++++"
 echo "Bitte geben Sie ein Passwort für den Benutzer $username ein"
 echo "+++++++++++++++++++++++++++++++++++++++++++"
