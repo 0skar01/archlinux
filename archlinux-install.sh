@@ -72,9 +72,8 @@ then
 fi
 echo "--------------------------------------------------------------------------"
 echo "almost there"
-echo "BITTE BEFOLGEN SIE DIESE SCHRITTE:"
-echo "Führen Sie visudo aus und kommentieren Sie Zeile 82 aus (zur Zeilennummer geben Sie Folgendes ein :set number)"
-echo "dann diese Befehle der Reihe nach: exit           umount -a           reboot"
+echo "BITTE GEBEN SIE DIE FOLGENDE BEFEHLE IN DIE REINFOLGE EIN:"
+echo "1. exit           2. umount -a           3. reboot"
 echo "Oskar"
 echo ":P"
 echo "--------------------------------------------------------------------------"
