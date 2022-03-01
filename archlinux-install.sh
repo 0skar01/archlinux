@@ -17,6 +17,7 @@ echo "Ihre Sprache und Tastatur auf Deutsch einstellen"
 echo "+++++++++++++++++++++++++++++++++++++++++++"
 echo "de-DE.UTF-8" >> /etc/locale.gen
 echo "LANG=de_DE.UTF-8" >> /etc/locale.conf
+locale-gen
 echo "KEYMAP=de-latin1" >> /etc/vconsole.conf
 echo "+++++++++++++++++++++++++++++++++++++++++++"
 echo "Ihres Hostnamens Einstellen"
