@@ -47,7 +47,7 @@ echo "+++++++++++++++++++++++++++++++++++++++++++"
 echo "Bitte geben Sie ein Passwort für den Benutzer $username ein"
 echo "+++++++++++++++++++++++++++++++++++++++++++"
 passwd $username
-pacman -S sudo
+pacman -S --noconfirm sudo
 echo "%wheel ALL=(ALL:ALL) ALL" >> /etc/sudoers
 echo "++++++++++++++++++++++++++++++++++++++++++++++++        +++++++"
 echo "+++++++++++++++++++++++++++++++++++++++++++             +++++++"
