@@ -37,6 +37,7 @@ systemctl enable NetworkManager
 systemctl enable sshd
 systemctl enable reflector.timer
 systemctl enable cups
+systemctl enable fstrim.timer
 echo "+++++++++++++++++++++++++++++++++++++++++++"
 echo "Hinzufügen eines neuen Benutzers mit dem Benutzernamen $username"
 echo "+++++++++++++++++++++++++++++++++++++++++++"
@@ -72,7 +73,7 @@ then
 fi
 echo "--------------------------------------------------------------------------"
 echo "almost there"
-printf "\e[1;32mBITTE GEBEN SIE DIE FOLGENDE BEFEHLE IN DIE REINFOLGE EIN:\e[0m"
+printf "\e[1;32mBITTE GEBEN SIE DIE FOLGENDEN BEFEHLE GENAU IN DIESER REINFOLGE EIN:\e[0m"
 printf "\e[7;32m1. exit           2. umount -a           3. reboot\e[0m"
 printf "\e[7;31mOskar\e[0m"
 echo ":P"
