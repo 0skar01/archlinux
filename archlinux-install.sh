@@ -32,7 +32,7 @@ echo "+++++++++++++++++++++++++++++++++++++++++++"
 passwd
 
 pacman -S --noconfirm grub efibootmgr networkmanager network-manager-applet base-devel dialog mtools dosfstools wpa_supplicant reflector linux-headers xdg-utils xdg-user-dirs rsync inetutils nfs-utils gvfs gvfs-smb openssh xf86-video-intel cups hplip pulseaudio alsa-utils pavucontrol terminus-font
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
+grub-install --target=i386-pc /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 systemctl enable NetworkManager
 systemctl enable sshd
